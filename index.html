@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/nullstyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Тест на знание IT</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div id="test" class="test">
+          <h1 class="test__title">Тестирование</h1>
+          <div class="test__content">
+            <div class="game-question-container">
+              <h2 id="display-question"></h2>
+            </div>
+
+            <div class="game-options-container">
+              <ul class="options-list">
+                <li>
+                  <input
+                    type="radio"
+                    id="option-one"
+                    name="option"
+                    class="radio"
+                    value=""
+                  />
+                  <label for="option-one" class="option"></label>
+                </li>
+
+                <li>
+                  <input
+                    type="radio"
+                    id="option-two"
+                    name="option"
+                    class="radio"
+                    value="optionB"
+                  />
+                  <label for="option-two" class="option"></label>
+                </li>
+
+                <li>
+                  <input
+                    type="radio"
+                    id="option-three"
+                    name="option"
+                    class="radio"
+                    value="optionC"
+                  />
+                  <label for="option-three" class="option"></label>
+                </li>
+
+                <li>
+                  <input
+                    type="radio"
+                    id="option-four"
+                    name="option"
+                    class="radio"
+                    value="optionD"
+                  />
+                  <label for="option-four" class="option"></label>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <button id="next-question-btn" class="btn" disabled>
+                Ответить
+              </button>
+            </div>
+          </div>
+          <div class="test__progressbar">
+            <span id="progress-line" class="test__progressbar-line_gray">
+              <span
+                id="current-progress-line"
+                class="test__progressbar-line_blue"
+              ></span>
+            </span>
+            <span id="progress-start" class="test__progressbar-start">0</span>
+            <span
+              id="progress-current"
+              class="test__progressbar-current"
+            ></span>
+            <span id="progress-end" class="test__progressbar-end"></span>
+          </div>
+        </div>
+        <div id="results" class="results">
+          <h2 id="results-title" class="results__title">Хороший результат</h2>
+          <p id="results-subtitle" class="results__subtitle">
+            Вы ответили правильно на 5 вопросов. <br />
+            Так держать!
+          </p>
+          <div class="results__content">
+            <div id="results-list" class="results__body"></div>
+            <div class="results__again-test-btn">
+              <button id="again-test-button" class="btn">Пройти еще раз</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
